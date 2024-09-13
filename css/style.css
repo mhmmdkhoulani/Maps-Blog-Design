@@ -642,3 +642,53 @@ footer .copyright a {
   background-color: white;
   color: black;
 }
+
+/* Profile */
+.profile .banner {
+  width: 100%;
+  height: 300px;
+  background-image: url("../images/profilebanner.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.profile .profile-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-top: -125px;
+  border: 10px solid white;
+  margin-bottom: 30px;
+}
+.profile .profile-image img {
+  width: 100%;
+}
+.profile .profile-details {
+  display: flex;
+  justify-content: space-between;
+}
+.profile .profile-details .btn {
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  transition: all ease-in-out 0.3s;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+.profile .profile-details .profile-stats {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.profile .profile-details .profile-stats p {
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.profile .profile-details .profile-stats span {
+  display: inline-block;
+  font-size: 40px;
+  margin-left: 10px;
+  font-weight: bold;
+  color: #333333;
+}
