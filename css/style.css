@@ -692,3 +692,15 @@ footer .copyright a {
   font-weight: bold;
   color: #333333;
 }
+
+#createPostModal .modal-dialog button[type="submit"] {
+  text-decoration: none;
+  font-weight: 500;
+  transition: all ease-in-out 0.3s;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  border: none;
+}

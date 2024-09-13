@@ -86,7 +86,7 @@
             </div>
           </div>
           <div>
-            <a href="#" class="btn">Add Post</a>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#createPostModal" class="btn">Add Post</a>
           </div>
         </div>
       </div>
@@ -273,6 +273,68 @@
         </div>
       </div>
     </section>
+
+    <!-- Create Post  -->
+    <div class="modal fade" id="createPostModal" tabindex="-1" aria-labelledby="createPostModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="createPostModalLabel">Create New Post</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="postTitle" class="form-label">Title</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="postTitle"
+                  placeholder="Enter post title"
+                  required
+                />
+              </div>
+    
+              <div class="mb-3">
+                <label for="postContent" class="form-label">Content</label>
+                <textarea
+                  class="form-control"
+                  id="postContent"
+                  rows="4"
+                  placeholder="Enter post content"
+                  required
+                ></textarea>
+              </div>
+    
+              <div class="mb-3">
+                <label for="postCategory" class="form-label">Category</label>
+                <select id="postCategory" class="form-select" required>
+                  <option value="" disabled selected>Select category</option>
+                  <option value="news">News</option>
+                  <option value="sports">Sports</option>
+                  <option value="technology">Technology</option>
+                  <option value="business">Business</option>
+                </select>
+              </div>
+    
+              <div class="mb-3">
+                <label for="postImage" class="form-label">Upload Image</label>
+                <input
+                  type="file"
+                  class="form-control"
+                  id="postImage"
+                  accept="image/*"
+                  required
+                />
+              </div>
+    
+              <button type="submit" class="btn btn-primary">Create Post</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- footer -->
     <footer>
       <div class="container">
